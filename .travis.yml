@@ -1,0 +1,9 @@
+language : PHP
+
+php : 
+  - 7.2
+
+before_script:
+  - composer install
+script:
+  - ./vendor/bin/phpunit --coverage-text
